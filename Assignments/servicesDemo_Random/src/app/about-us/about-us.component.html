@@ -1,0 +1,11 @@
+<table>
+    <tr>
+        <td><label for="">Employee Name:</label></td>
+        <td><input type="text" #borderDisp [(ngModel)]='value'></td>
+        <td><span #spanError></span></td>
+    </tr>
+    <tr>
+        <td><button (click)='displayVal()'>Create ID</button></td>
+    </tr>
+    <h3>{{printingVal}}</h3>
+</table>

@@ -1,0 +1,39 @@
+<!-- property binding example -->
+<input type="text" [value]='PropertyExample'>
+<hr>
+
+<!-- style binding -->
+<h3 [style.Color]='color' >TestYantra</h3>
+<hr>
+
+<!-- class binding -->
+<h2 class="textColor">TechnoElevate</h2>
+<hr>
+
+<!-- attribute binding -->
+<table class="borderProperty" *ngIf='switchingVal'>
+  <tr >
+    <th [attr.colspan]='2' class="borderProperty">Name</th>
+    <th class="borderProperty">Age</th>
+  </tr>
+  <tr>
+    <td class="borderProperty">Sasi</td>
+    <td class="borderProperty">24</td>
+  </tr>
+</table>
+<br>
+<hr>
+
+<!-- Event binding with *ngIf -->
+<button (click)='hideTable()'>ClickToHideTable</button>
+<hr>
+
+<!-- interpolation -->
+<h3>{{interPolationExample}}</h3>
+<hr>
+
+<!-- two way binding --><!-- model->view and view->model -->
+<label for="">twoWayBindongExample:</label>
+<input type="text" [(ngModel)]='value'>
+<h3>display value of Inp:{{value}}</h3>
+<hr>
